@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>生日快乐</title>
+        <link rel="icon" type="image/x-icon" href="cake-icon.jpg">
+        <link rel="stylesheet" type="text/css" href="birth.css">
+        <meta http-equiv="refresh" content="15; song.html">
+        <style type="text/css">
+            @keyframes example{
+                0%{
+                    left:50%;
+                    top:0px;
+                }
+                100%{
+                    left:50%;
+                    top:45px;
+                }
+            }
+            .bg{
+                position:relative;
+                width:50px;
+                height:50px;
+                animation-name:example;
+                animation-delay:5s;
+                animation-duration:10s;
+                animation-iteration-count: 1;
+            }
+            @keyframes balloon1{
+                0%{
+                    left:10%;
+                    top:400px;
+                }
+                100%{
+                    left:10%;
+                    top:200px;
+                }
+            }
+            @keyframes balloon2{
+                0%{
+                    left:80%;
+                    top:500px;
+                }
+                100%{
+                    left:80%;
+                    top:100px;
+                }
+            }
+            .balloon1{
+                float:left;
+                position:absolute;
+                width:100px;
+                height:100px;
+                animation-name:balloon1;
+                animation-duration:15s;
+                animation-iteration-count: 1;
+            }
+            .balloon2{
+                float:right;
+                position:absolute;
+                width:100px;
+                height:100px;
+                animation-name:balloon2;
+                animation-duration:15s;
+                animation-iteration-count: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="big-cake">
+            <img class="bg" src="bg.png" alt="熄灭">
+            <img class="balloon1" src="balloon1.jpg" alt="balloon1">
+            <img class="balloon2" src="balloon2.jpg" alt="balloon2">
+            <img class="big-cake-img" src="love-cake.jpg" alt="大蛋糕" usemap="#candle">
+            <map name="candle">
+                <area shape="circle" coords="303,70,30" alt="蜡烛" href="song.html" style="background-color:white;">
+            </map>
+        </div>
+    </body>
+</html>
